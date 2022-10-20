@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 
-const PORT = process.env.Port || 8080
+const PORT = process.env.Port || 4000
 app.listen(PORT,() => console.log(`Server is running @ ${PORT} `));
 
 app.use('/api/user', Authroutes);

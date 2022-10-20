@@ -145,7 +145,6 @@ const productValidation = Joi.object({
     date: Joi.string().required().min(3),
     color: Joi.string().required().min(3),
     qty: Joi.number().required().error(new Error('please enter valid qty name'))
-
 })
 
 const productValid = async (req, res, next) => {
